@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {client} from './client';
 import Posts from './components/Posts';
+import SearchBar from './components/SearchBar';
 
 class App extends React.Component {
   state = {
@@ -20,6 +21,7 @@ class App extends React.Component {
     return (
     <div className="App">
       <div className="container">
+        <SearchBar /> 
         <header>
           <div className="wrapper">
             <span>React and Contentful</span>
