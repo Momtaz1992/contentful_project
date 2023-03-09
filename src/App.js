@@ -21,7 +21,7 @@ class App extends React.Component {
     return (
     <div className="App">
       <div className="container">
-        <SearchBar /> 
+        <SearchBar  client={client}/> 
         <header>
           <div className="wrapper">
             <span>React and Contentful</span>

@@ -1,14 +1,9 @@
 import React, { useRef, useState } from 'react';
-import * as contentful from 'contentful';
 
-const client = contentful.createClient({
-  space: "heloufr9qqbc",
-  accessToken: "u6jLIkfaGXObqWB2j8of9mDfIso0WRtBrNNO27aDeXc",
-  /* space:process.env.REACT_APP_SPACE_ID,
-  accessToken:process.env.REACT_APP_ACCESS_TOKEN, */
-});
 
-function SearchBar() {
+
+
+function SearchBar({client}) {
   const inputRef = useRef(null);
   const [results, setResults] = useState([]);
 
