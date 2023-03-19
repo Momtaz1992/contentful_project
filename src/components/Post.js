@@ -6,8 +6,8 @@ const Post = ({article}) => {
        const postBody = marked(body);
        const postDescription = marked(description);
        return ( 
-              <div className="post">
-                     <h2>{title}</h2>
+              <div className="card">
+                     <h2 className='info'>{title}</h2>
                      {img && <img className='img' src={img.fields.file.url} alt={title} width="650" height="500" />}
                      <section dangerouslySetInnerHTML={{__html:postBody}}/>
                      <p dangerouslySetInnerHTML={{__html:postDescription}}/>

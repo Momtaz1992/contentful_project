@@ -20,19 +20,21 @@ class App extends React.Component {
   render () {
     return (
     <div className="App">
-      <div className="container">
-        <SearchBar  client={client}/> 
         <header>
-          <div className="wrapper">
-            <span>React and Contentful</span>
+          <div className="header">
+            <span>Feel Free to Try Our Recipies</span>
           </div>
+          <br />
+
+
         </header>
-        <main>
-          <div className="wrapper">
+        <div className="search">
+        <SearchBar  client={client}/> 
+        </div>
+        <div class="ball"></div>
+          <div className="recipe-list">
               <Posts className="context" posts={this.state.articles}/>
           </div>
-        </main>
-      </div>
     </div>
   );
 }}
